@@ -20,11 +20,11 @@ const locales = {
     blog: '博客',
   },
   en: {
-    design: 'Design',
-    development: 'Development',
-    components: 'Components',
-    resources: 'Resources',
-    blog: 'Blog',
+    design: '디자인',
+    development: '개발',
+    components: '컴포넌트',
+    resources: '리소스',
+    blog: '블로그',
   },
 };
 
