@@ -29,10 +29,10 @@ const locales = {
     designDesc: '配套生态，让你快速搭建网站应用',
   },
   en: {
-    assetsTitle: 'Rich components',
-    assetsDesc: 'Practical components to meet your needs, flexible customization and expansion',
-    designTitle: 'Design and framework',
-    designDesc: 'Supporting ecology, allowing you to quickly build website applications',
+    assetsTitle: '풍부한 컴포넌트 종류',
+    assetsDesc: '다채로운 컴포넌트를 자유롭게 조립하고 확장하세요.',
+    designTitle: '디자인 및 프레임워크',
+    designDesc: 'Ant 생태계를 이용해 빠르게 웹 사이트 어플리케이션을 구축할 수 있습니다.',
   },
 };
 

@@ -16,9 +16,9 @@ const locales = {
   },
   en: {
     slogan:
-      'Help designers/developers building beautiful products more flexible and working with happiness',
-    start: 'Getting Started',
-    designLanguage: 'Design Language',
+      '디자이너와 개발자를 도와 멋진 프로덕트를 훨씬 유연하고 아름답게 빌드하여 유저에게 탁월한 사용경험을 제공합니다.',
+    start: '시작하기',
+    designLanguage: '디자인 언어',
   },
 };
 
