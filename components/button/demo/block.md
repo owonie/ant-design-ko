@@ -4,4 +4,4 @@
 
 ## en-US
 
-`block` property will make the button fit to its parent width.
+`block` 속성은 버튼의 width를 부모의 width에 맞춰 조절합니다.

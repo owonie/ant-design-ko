@@ -4,4 +4,4 @@
 
 ## en-US
 
-`danger` is a property of button after antd 4.0.
+antd 4.0 버전 이후, `danger` 는 버튼 타입이 아닌 버튼 속성으로 바뀌었습니다.

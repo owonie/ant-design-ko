@@ -4,4 +4,4 @@
 
 ## en-US
 
-`ghost` property will make button's background transparent, it is commonly used in colored background.
+`ghost` 속성은 버튼의 배경색을 투명하게 만들어줍니다. 색상이 있는 배경에서 주로 사용되는 속성입니다.

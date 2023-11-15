@@ -6,6 +6,6 @@
 
 ## en-US
 
-`Button` components can contain an `Icon`. This is done by setting the `icon` property or placing an `Icon` component within the `Button`.
+`Button` 내부에 `Icon` 이 포함될 수 있습니다. 이는 `icon` 속성을 설정하거나 `Button`태그 내부에 `Icon` 컴포넌트를 넣는 방식으로 구현할 수 있습니다.
 
-If you want specific control over the positioning and placement of the `Icon`, then that should be done by placing the `Icon` component within the `Button` rather than using the `icon` property.
+만약 `Icon` 의 위치(`position`) 를 직접 정하고 싶다면, `Icon` 속성이 아닌 `Icon` 컴포넌트를 사용하는 것이 좋습니다.

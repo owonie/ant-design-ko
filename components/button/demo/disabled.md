@@ -4,4 +4,4 @@
 
 ## en-US
 
-To mark a button as disabled, add the `disabled` property to the `Button`.
+`disabled` 속성을 추가하여 버튼을 비활성화 할 수 있습니다.
