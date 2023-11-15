@@ -4,4 +4,4 @@
 
 ## en-US
 
-Component Token. Button with MUI style.
+컴포넌트 토큰. MUI 스타일을 모방한 버튼.

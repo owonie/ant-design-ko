@@ -4,4 +4,4 @@
 
 ## en-US
 
-If you need several buttons, we recommend that you use 1 primary button + n secondary buttons, and if there are more than three operations, you can group some of them into [Dropdown.Button](/components/dropdown/#components-dropdown-demo-dropdown-button).
+primary 버튼 하나와 여러개의 secondary 버튼을 조합해서 사용하는 것이 좋습니다. 만약 secondary 버튼이 3개 이상이면, 드랍다운 방식의 버튼을 [Dropdown.Button](/components/dropdown/#components-dropdown-demo-dropdown-button)사용하는 것을 추천합니다.

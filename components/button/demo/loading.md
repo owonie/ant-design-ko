@@ -4,4 +4,4 @@
 
 ## en-US
 
-A loading indicator can be added to a button by setting the `loading` property on the `Button`.
+`Button` 에 있는 `loading` 속성으로 버튼을 로딩 상태로 만들 수 있습니다.

@@ -4,4 +4,4 @@
 
 ## en-US
 
-There are `primary` button, `default` button, `dashed` button, `text` button and `link` button in antd.
+`primary` 버튼, `default` 버튼, `dashed` 버튼, `text` 버튼 그리고 `link` 버튼이 존재하며, `primary` 버튼은 한 섹션에 한개만 존재할 수 있습니다.
