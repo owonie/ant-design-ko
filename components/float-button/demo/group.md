@@ -4,4 +4,4 @@
 
 ## en-US
 
-When multiple buttons are used together, `<FloatButton.Group />` is recommended. By setting `shape` of FloatButton.Group, you can change the shape of group. `shape` of FloatButton.Group will override `shape` of FloatButton inside.
+여러개의 버튼을 조합할 땐 `<FloatButton.Group />` 사용해보세요. `shape` 속성으로 버튼 그룹의 모양도 바꿀 수 있습니다. FloatButton.Group 의 `shape` 속성은 각 FloatButton 의 `shape` 속성을 `override` 합니다.

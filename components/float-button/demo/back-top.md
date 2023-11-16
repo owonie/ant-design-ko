@@ -4,4 +4,4 @@
 
 ## en-US
 
-`BackTop` makes it easy to go back to the top of the page.
+`BackTop` 스크롤의 위치를 페이지 최상단으로 올려줍니다.

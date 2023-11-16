@@ -55,7 +55,7 @@ Ant Design 은 다섯 종류의 버튼을 제공합니다.
 
 버튼 속성을 이용해 다양한 버튼 스타일을 생성할 수 있습니다. 다음과 같은 순서로 버튼 속성에 접근해보세요: `type` -> `shape` -> `size` -> `loading` -> `disabled`.
 
-| 속성 | 설명 | 타입 | 기본 값 | 버전 |
+| 속성 | 설명 | 타입 | 기본값 | 버전 |
 | --- | --- | --- | --- | --- |
 | block | 버튼의 `width` 를 부모의 `width` 에 맞게 설정한다 | boolean | false |  |
 | classNames | 시멘틱 DOM 클래스 | Record<SemanticDOM, string> | - | 5.4.0 |
@@ -64,7 +64,7 @@ Ant Design 은 다섯 종류의 버튼을 제공합니다.
 | ghost | 배경을 투명색으로 지정하고, 텍스트와 테두리 색상을 반전합니다 | boolean | false |  |
 | href | 링크된 페이지의 URL을 명시합니다 | string | - |  |
 | htmlType | `button`의 오리지널 html `type` 을 설정합니다 [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#attr-type) | string | `button` |  |
-| icon | 버튼의 아이콘 컴포넌트 설정 | ReactNode | - |  |
+| icon | 버튼의 아이콘 요소 설정 | ReactNode | - |  |
 | loading | 버튼 로딩 상태 | boolean \| { delay: number } | false |  |
 | shape | 버튼 모양 | `default` \| `circle` \| `round` | `default` |  |
 | size | 버튼 사이즈 | `large` \| `middle` \| `small` | `middle` |  |

@@ -4,4 +4,4 @@
 
 ## en-US
 
-FloatButton with Badge.
+FloatButton 에 숫자배지를 추가할 수 있습니다.

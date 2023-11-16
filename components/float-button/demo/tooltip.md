@@ -4,4 +4,4 @@
 
 ## en-US
 
-Setting `tooltip` prop to show FloatButton with tooltip.
+`tooltip` 속성을 이용해서 버튼 툴팁을 추가할 수 있습니다.

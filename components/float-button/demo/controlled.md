@@ -4,4 +4,4 @@
 
 ## en-US
 
-Set the component to controlled mode through `open`, which need to be used together with trigger.
+`open` 속성을 통해 제어 모드로 변경할 수 있습니다. `trigger` 속성과 함께 사용해주세요.

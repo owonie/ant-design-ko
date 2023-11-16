@@ -4,4 +4,4 @@
 
 ## en-US
 
-Change the type of the FloatButton with `type`.
+`type` 속성로 버튼의 종류를 변경할 수 있습니다.

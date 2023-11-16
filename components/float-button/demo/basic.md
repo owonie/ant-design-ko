@@ -4,4 +4,4 @@
 
 ## en-US
 
-The most basic usage.
+제일 기본적인 사용법입니다.
