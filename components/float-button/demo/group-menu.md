@@ -4,4 +4,4 @@
 
 ## en-US
 
-Open menu mode with `trigger`, which could be `hover` or `click`.
+`trigger` 속성을 통해 메뉴 모드로 전환할 수 있습니다. `hover` 또는 `click` 두가지 방식으로 트리거를 발동할 수 있습니다.

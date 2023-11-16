@@ -4,4 +4,4 @@
 
 ## en-US
 
-Change the shape of the FloatButton with `shape`.
+`shape` 속성으로 버튼의 모양을 변경합니다.

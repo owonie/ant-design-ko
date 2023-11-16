@@ -6,6 +6,6 @@
 
 ## en-US
 
-Setting `description` prop to show FloatButton with description.
+`description` 속성으로 버튼에 설명을 추가할 수 있습니다.
 
-> supported only when `shape` is `square`. Due to narrow space for text, short sentence is recommended.
+> `shape` 속성이 `square` 일 때만 사용할 수 있습니다. 공간이 좁기에 간단한 문구를 넣는 것을 추천드립니다.
