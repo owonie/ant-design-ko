@@ -2,7 +2,7 @@
 category: Components
 group: General
 title: Icon
-description: Semantic vector graphics.
+description: 시맨틱 벡터 그래픽.
 toc: false
 cover: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*PdAYS7anRpoAAAAAAAAAAAAADrJ8AQ/original
 coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*xEDOTJx2DEkAAAAAAAAAAAAADrJ8AQ/original
@@ -10,38 +10,38 @@ demo:
   cols: 2
 ---
 
-## How to use
+## 사용하는 법
 
-Before use icons, you need to install [@ant-design/icons](https://github.com/ant-design/ant-design-icons) package:
+Icon 을 사용하기 전에 [@ant-design/icons](https://github.com/ant-design/ant-design-icons) 패키지 설치가 필요합니다:
 
 <InstallDependencies npm='npm install @ant-design/icons --save' yarn='yarn add @ant-design/icons' pnpm='pnpm install @ant-design/icons --save'></InstallDependencies>
 
-## List of icons
+## Icon 리스트
 
 <IconSearch></IconSearch>
 
-## Examples
+## 사용 예시
 
 <!-- prettier-ignore -->
-<code src="./demo/basic.tsx">Basic</code>
-<code src="./demo/two-tone.tsx">Two-tone icon and colorful icon</code>
-<code src="./demo/custom.tsx">Custom Icon</code>
-<code src="./demo/iconfont.tsx">Use iconfont.cn</code>
-<code src="./demo/scriptUrl.tsx">Multiple resources from iconfont.cn</code>
+<code src="./demo/basic.tsx">기본 Icon</code>
+<code src="./demo/two-tone.tsx">투톤 Icon</code>
+<code src="./demo/custom.tsx">커스텀 Icon</code>
+<code src="./demo/iconfont.tsx">iconfont.cn 라이브러리</code>
+<code src="./demo/scriptUrl.tsx">iconfont.cn 라이브러리의 다양한 리소스</code>
 
 ## API
 
-### Common Icon
+### 일반 Icon
 
-| Property | Description | Type | Default | Version |
+| 속성 | 설명 | 타입 | 기본값 | 버전 |
 | --- | --- | --- | --- | --- |
-| className | The className of Icon | string | - |  |
-| rotate | Rotate by n degrees (not working in IE9) | number | - |  |
-| spin | Rotate icon with animation | boolean | false |  |
-| style | The style properties of icon, like `fontSize` and `color` | CSSProperties | - |  |
-| twoToneColor | Only supports the two-tone icon. Specify the primary color | string (hex color) | - |  |
+| className | Icon 의 className | string | - |  |
+| rotate | Icon 로테이션 각도 (IE9 버전에선 지원하지 않습니다) | number | - |  |
+| spin | Icon 을 로테이션 시킵니다 | boolean | false |  |
+| style | Icon 의 style (예: `fontSize`, `color`) | CSSProperties | - |  |
+| twoToneColor | 투톤 Icon 전용속성, 메인색을 지정할 수 있습니다 | string (hex color) | - |  |
 
-We still have three different themes for icons, icon component name is the icon name suffixed by the theme name.
+세 가지 다른 Icon 테마가 있으며, Icon 컴포넌트명 뒤에 테마를 접미사로 붙여 import 할 수 있습니다.
 
 ```jsx
 import { StarOutlined, StarFilled, StarTwoTone } from '@ant-design/icons';
@@ -51,31 +51,31 @@ import { StarOutlined, StarFilled, StarTwoTone } from '@ant-design/icons';
 <StarTwoTone twoToneColor="#eb2f96" />
 ```
 
-### Custom Icon
+### 커스텀 Icon
 
-| Property | Description | Type | Default | Version |
+| 속성 | 설명 | 타입 | 기본값 | 버전 |
 | --- | --- | --- | --- | --- |
-| component | The component used for the root node | ComponentType&lt;CustomIconComponentProps> | - |  |
-| rotate | Rotate degrees (not working in IE9) | number | - |  |
-| spin | Rotate icon with animation | boolean | false |  |
-| style | The style properties of icon, like `fontSize` and `color` | CSSProperties | - |  |
+| component | Icon 렌더링을 제어하는 데 사용되며, 일반적으로 `<svg>` 에 감싸진 React 컴포넌트 형태를 갖고있습니다 | ComponentType&lt;CustomIconComponentProps> | - |  |
+| rotate | Icon 로테이션 각도 (IE9 버전에선 지원하지 않습니다) | number | - |  |
+| spin | Icon 을 로테이션 시킵니다 | boolean | false |  |
+| style | Icon 의 style (예: `fontSize`, `color`) | CSSProperties | - |  |
 
-### About SVG icons
+### SVG Icon 관하여
 
-We introduced SVG icons in version `3.9.0`, replacing font icons. This has the following benefits:
+버전 `3.9.0` 이후, antd 는 SVG Icon 으로 폰트 Icon 을 대체하여 아래와 같은 메리트를 얻을 수 있었습니다:
 
-- Complete offline usage of icons, without dependency on a CDN-hosted font icon file (No more empty square during downloading and no need to deploy icon font files locally either!)
-- Much more display accuracy on lower-resolution screens
-- The ability to choose icon color
-- No need to change built-in icons with overriding styles by providing more props in component
+- CDN 파일 호스팅에 의존할 필요없이 오프라인에서 사용 가능 (빈 Icon 이미지를 유저에게 노출시키지 않으며, 로컬에서 Icon 폰트파일을 배포할 필요가 없어집니다)
+- 낮은 해상도 화면에서 더 좋은 화질 표시
+- Icon 색상 지정 가능
+- `style` 오버라이드 없이 built-in Icon 컴포넌트에 더 많은 속성을 제공
 
-More discussion of SVG icon reference at [#10353](https://github.com/ant-design/ant-design/issues/10353).
+더 많은 내용은 해당 링크를 참조하세요: [#10353](https://github.com/ant-design/ant-design/issues/10353).
 
-> ⚠️ Given the extra bundle size caused by all SVG icons imported in 3.9.0, we will provide a new API to allow developers to import icons as needed, you can track [#12011](https://github.com/ant-design/ant-design/issues/12011) for updates.
+> ⚠️ 버전 3.9.0 에서 모든 svg Icon 을 가져오면서 번들 사이즈가 거대해지는 현상을 해결하기 위해, 사용자가 필요한 Icon 만 가져올 수 있는 API 를 제공할 예정입니다. 관심이 있다면 해당 링크를 참조하세요: [#12011](https://github.com/ant-design/ant-design/issues/12011) .
 >
-> While you wait, you can use [webpack plugin](https://github.com/Beven91/webpack-ant-icon-loader) from the community to chunk the icon file.
+> 커뮤니티에서 [webpack plugin](https://github.com/Beven91/webpack-ant-icon-loader) 을 이용해 Icon 파일을 chunk 할 수 도 있습니다.
 
-The properties `theme`, `component` and `twoToneColor` were added in `3.9.0`. The best practice is to pass the property `theme` to every `<Icon />` component.
+`theme`, `component` 그리고 `twoToneColor` 속성은 버전 `3.9.0` 에 추가되었습니다. 모든 `<Icon />` 컴포넌트에 `theme` 속성을 적용하는 방식을 사용하는 것을 추천드립니다.
 
 ```jsx
 import { MessageOutlined } from '@ant-design/icons';
@@ -83,15 +83,15 @@ import { MessageOutlined } from '@ant-design/icons';
 <MessageOutlined style={{ fontSize: '16px', color: '#08c' }} />;
 ```
 
-All the icons will render to `<svg>`. You can still set `style` and `className` for size and color of icons.
+모든 Icon 컴포넌트는 `<svg>` 형식으로 렌더됩니다. 기본 Icon 과 똑같이 `style` 과 `className` 속성을 이용해 Icon 의 사이즈와 컬러를 설정할 수 있습니다.
 
 ```jsx
 <Icon type="message" style={{ fontSize: '16px', color: '#08c' }} theme="outlined" />
 ```
 
-### Set TwoTone Color
+### 투톤 컬러 설정하기
 
-When using the two-tone icons, you can use the static methods `getTwoToneColor()` and `setTwoToneColor(colorString)` to specify the primary color.
+투톤 Icno 의 정적 메서드 `getTwoToneColor()` 와 `setTwoToneColor(colorString)` 를 이용해 투톤 컬러를 지정하세요.
 
 ```jsx
 import { getTwoToneColor, setTwoToneColor } from '@ant-design/icons';
@@ -100,16 +100,16 @@ setTwoToneColor('#eb2f96');
 getTwoToneColor(); // #eb2f96
 ```
 
-### Custom Font Icon
+### 커스텀 폰트 Icon
 
-We added a `createFromIconfontCN` function to help developer use their own icons deployed at [iconfont.cn](http://iconfont.cn/) in a convenient way.
+사용자가 [iconfont.cn](http://iconfont.cn/) 라이브러리에서 제공되는 Icon 을 편리하게 사용할 수 있게끔 `createFromIconfontCN` 함수를 제공합니다.
 
-> This method is specified for [iconfont.cn](http://iconfont.cn/).
+> 해당 메서드는 [iconfont.cn](http://iconfont.cn/) 전용 메서드입니다.
 
 ```jsx
 import React from 'react';
-import ReactDOM from 'react-dom/client';
 import { createFromIconfontCN } from '@ant-design/icons';
+import ReactDOM from 'react-dom/client';
 
 const MyIcon = createFromIconfontCN({
   scriptUrl: '//at.alicdn.com/t/font_8d5l8fzk5b87iudi.js', // generate in iconfont.cn
@@ -118,22 +118,22 @@ const MyIcon = createFromIconfontCN({
 ReactDOM.createRoot(mountNode).render(<MyIcon type="icon-example" />);
 ```
 
-It creates a component that uses SVG sprites in essence.
+`<use>` 태그로 Icon 컴포넌트를 렌더하는 방식으로 작동됩니다.
 
-The following options are available:
+커스텀 Icon 속성:
 
-| Property | Description | Type | Default | Version |
+| 속성 | 설명 | 타입 | 기본값 | 버전 |
 | --- | --- | --- | --- | --- |
-| extraCommonProps | Define extra properties to the component | { \[key: string]: any } | {} |  |
-| scriptUrl | The URL generated by [iconfont.cn](http://iconfont.cn/) project. Support `string[]` after `@ant-design/icons@4.1.0` | string \| string\[] | - |  |
+| extraCommonProps | 컴포넌트의 추가 속성 | { \[key: string]: any } | {} |  |
+| scriptUrl | [iconfont.cn](http://iconfont.cn/) 프로젝트에서 생성된 URL. `@ant-design/icons@4.1.0` 버전 이후로 `string[]` 타입을 지원합니다 | string \| string\[] | - |  |
 
-The property `scriptUrl` should be set to import the SVG sprite symbols.
+`scriptUrl` 속성이 유효하게 설정된 경우, Icon 컴포넌트는 렌더링 전 자동으로 iconfont.cn 에서 필요한 `Svg sprites symbols` 를 가져옵니다.
 
-See [iconfont.cn documents](http://iconfont.cn/help/detail?spm=a313x.7781069.1998910419.15&helptype=code) to learn about how to generate `scriptUrl`.
+[iconfont.cn documents](http://iconfont.cn/help/detail?spm=a313x.7781069.1998910419.15&helptype=code) 에서 `scriptUrl` 주소를 생성하는 방법을 확인할 수 있습니다.
 
-### Custom SVG Icon
+### 커스텀 SVG Icon
 
-You can import SVG icon as a react component by using `webpack` and [`@svgr/webpack`](https://www.npmjs.com/package/@svgr/webpack). `@svgr/webpack`'s `options` [reference](https://github.com/smooth-code/svgr#options).
+`webpack` 을 사용한다면 [`@svgr/webpack`](https://www.npmjs.com/package/@svgr/webpack)로 SVG icon 을 React 컴포넌트 형식으로 import 해보세요. `@svgr/webpack` `options` 속성은 [참고문서](https://github.com/smooth-code/svgr#options)을 확인해보세요.
 
 ```js
 // webpack.config.js
@@ -157,25 +157,26 @@ module.exports = {
 
 ```jsx
 import React from 'react';
-import ReactDOM from 'react-dom/client';
 import Icon from '@ant-design/icons';
 import MessageSvg from 'path/to/message.svg'; // path to your '*.svg' file.
+import ReactDOM from 'react-dom/client';
+
 // in create-react-app:
 // import { ReactComponent as MessageSvg } from 'path/to/message.svg';
 
 ReactDOM.createRoot(mountNode).render(<Icon component={MessageSvg} />);
 ```
 
-The following properties are available for the component:
+svg Icon 에서 사용 가능한 속성:
 
-| Property | Description | Type | Readonly | Version |
-| --- | --- | --- | --- | --- |
-| className | The computed class name of the `svg` element | string | - |  |
-| fill | Define the color used to paint the `svg` element | string | `currentColor` |  |
-| height | The height of the `svg` element | string \| number | `1em` |  |
-| style | The computed style of the `svg` element | CSSProperties | - |  |
-| width | The width of the `svg` element | string \| number | `1em` |  |
+| 속성      | 설명                               | 타입             | readonly 값    | 버전 |
+| --------- | ---------------------------------- | ---------------- | -------------- | ---- |
+| className | 다 그려진 `svg` 요소의 className   | string           | -              |      |
+| fill      | `svg` 요소를 그릴 때 사용되는 색상 | string           | `currentColor` |      |
+| height    | `svg` 요소의 `height` 값           | string \| number | `1em`          |      |
+| style     | 다 그려진 `svg` 요소의 style       | CSSProperties    | -              |      |
+| width     | `svg` 요소의 `width` 값            | string \| number | `1em`          |      |
 
-## Design Token
+## 테마 변수 (Design Token)
 
 <ComponentTokenTable component="Icon"></ComponentTokenTable>

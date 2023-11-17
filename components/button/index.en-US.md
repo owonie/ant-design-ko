@@ -14,37 +14,37 @@ group:
 
 ## 사용할 시기
 
-버튼은 한번 (또는 한 묶음) 의 액션 조작을 의미합니다. 클릭을 트리거로 비즈니스 로직을 실행할 수 있습니다.
+Button 은 한번 (또는 한 묶음) 의 액션 조작을 의미합니다. 클릭을 트리거로 비즈니스 로직을 실행할 수 있습니다.
 
-Ant Design 은 다섯 종류의 버튼을 제공합니다.
+Ant Design 은 다섯 종류의 Button 을 제공합니다.
 
-- Primary 버튼: 메인 액션을 수행하기 위한 버튼입니다. 한 섹션엔 단 하나의 primary 버튼만 사용할 수 있습니다.
-- Default 버튼: 실행 순서와 상관 없는 액션들을 수행할 때 사용하는 버튼입니다.
-- Dashed 버튼: 요소를 추가하는 액션에 주로 사용되는 버튼입니다.
-- Text 버튼: 부가적인 액션을 수행할 떄 사용되는 버튼입니다.
-- Link 버튼: 외부링크를 참조할 때 사용할 수 있는 버튼입니다.
+- Primary Button: 메인 액션을 수행하기 위한 Button 입니다. 한 섹션엔 단 하나의 Primary Button 만 사용할 수 있습니다.
+- Default Button: 실행 순서와 상관 없는 액션들을 수행할 때 사용하는 Button 입니다.
+- Dashed Button: 요소를 추가하는 액션에 주로 사용되는 Button 입니다.
+- Text Button: 부가적인 액션을 수행할 떄 사용되는 Button 입니다.
+- Link Button: 외부링크를 참조할 때 사용할 수 있는 Button 입니다.
 
-버튼은 아래의 4가지 속성과 함께 조합해서 사용할 수 있습니다.
+Button 은 아래의 4가지 속성과 함께 조합해서 사용할 수 있습니다.
 
 - `danger`: 삭제기능 또는 권한수정과 같이 리스크가 있는 액션에 사용됩니다.
 - `ghost`: 메인 페이지처럼 배경색이 복잡한 곳에서 사용할 수 있습니다.
 - `disabled`: 액션을 수행할 수 없는 상태를 표시하는 속성입니다.
-- `loading`: 버튼에 로딩 스피너를 추가할 수 있으며, 필요에 따라 다중 제출을 방지할 수도 있습니다.
+- `loading`: Button 에 로딩 스피너를 추가할 수 있으며, 필요에 따라 다중 제출을 방지할 수도 있습니다.
 
 ## 사용 예시
 
 <!-- prettier-ignore -->
-<code src="./demo/basic.tsx">버튼 종류</code>
+<code src="./demo/basic.tsx">Button 종류</code>
 <code src="./demo/icon.tsx">아이콘</code>
 <code src="./demo/debug-icon.tsx" debug>Debug Icon</code>
 <code src="./demo/debug-block.tsx" debug>Debug Block</code>
 <code src="./demo/size.tsx">사이즈</code>
 <code src="./demo/disabled.tsx">비활성화</code>
 <code src="./demo/loading.tsx">로딩 상태</code>
-<code src="./demo/multiple.tsx">다중버튼 조합</code>
-<code src="./demo/ghost.tsx">고스트 버튼</code>
-<code src="./demo/danger.tsx">위험 버튼</code>
-<code src="./demo/block.tsx">블록 버튼</code>
+<code src="./demo/multiple.tsx">다중 Button 조합</code>
+<code src="./demo/ghost.tsx">고스트 Button</code>
+<code src="./demo/danger.tsx">위험 Button</code>
+<code src="./demo/block.tsx">블록 Button</code>
 <code src="./demo/legacy-group.tsx" debug>Deprecated Button Group</code>
 <code src="./demo/chinese-chars-loading.tsx" debug>Loading style bug</code>
 <code src="./demo/component-token.tsx" debug>Component Token</code>
@@ -53,27 +53,27 @@ Ant Design 은 다섯 종류의 버튼을 제공합니다.
 
 일반적인 속성 참조：[일반적인 속성](/docs/react/common-props)
 
-버튼 속성을 이용해 다양한 버튼 스타일을 생성할 수 있습니다. 다음과 같은 순서로 버튼 속성에 접근해보세요: `type` -> `shape` -> `size` -> `loading` -> `disabled`.
+Button 속성을 이용해 다양한 Button 스타일을 생성할 수 있습니다. 다음과 같은 순서로 Button 속성에 접근해보세요: `type` -> `shape` -> `size` -> `loading` -> `disabled`.
 
 | 속성 | 설명 | 타입 | 기본값 | 버전 |
 | --- | --- | --- | --- | --- |
-| block | 버튼의 `width` 를 부모의 `width` 에 맞게 설정한다 | boolean | false |  |
+| block | Button 의 `width` 를 부모의 `width` 에 맞게 설정한다 | boolean | false |  |
 | classNames | 시멘틱 DOM 클래스 | Record<SemanticDOM, string> | - | 5.4.0 |
-| danger | 버튼 `danger` 속성 설정 | boolean | false |  |
-| disabled | 버튼 `disabled` 속성 설정 | boolean | false |  |
+| danger | Button `danger` 속성 설정 | boolean | false |  |
+| disabled | Button `disabled` 속성 설정 | boolean | false |  |
 | ghost | 배경을 투명색으로 지정하고, 텍스트와 테두리 색상을 반전합니다 | boolean | false |  |
 | href | 링크된 페이지의 URL을 명시합니다 | string | - |  |
 | htmlType | `button`의 오리지널 html `type` 을 설정합니다 [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#attr-type) | string | `button` |  |
-| icon | 버튼의 아이콘 요소 설정 | ReactNode | - |  |
-| loading | 버튼 로딩 상태 | boolean \| { delay: number } | false |  |
-| shape | 버튼 모양 | `default` \| `circle` \| `round` | `default` |  |
-| size | 버튼 사이즈 | `large` \| `middle` \| `small` | `middle` |  |
+| icon | Button 의 아이콘 요소 설정 | ReactNode | - |  |
+| loading | Button 로딩 상태 | boolean \| { delay: number } | false |  |
+| shape | Button 모양 | `default` \| `circle` \| `round` | `default` |  |
+| size | Button 사이즈 | `large` \| `middle` \| `small` | `middle` |  |
 | styles | 시멘틱 DOM 스타일 | Record<SemanticDOM, CSSProperties> | - | 5.4.0 |
 | target | `href` 가 지정된 경우 `a` 요소의 `target` 속성과 동일한 역할을 합니다 | string | - |  |
-| type | 버튼 타입 | `primary` \| `dashed` \| `link` \| `text` \| `default` | `default` |  |
+| type | Button 타입 | `primary` \| `dashed` \| `link` \| `text` \| `default` | `default` |  |
 | onClick | `click` 이벤트를 처리하는 핸들러 설정 | (event: MouseEvent) => void | - |  |
 
-기존 html 버튼에서 지원하는 다른 속성들 까지 모두 지원하고 있습니다.
+기존 html Button 에서 지원하는 다른 속성들 까지 모두 지원하고 있습니다.
 
 ### `styles` 와 `classNames` 속성
 
@@ -89,7 +89,7 @@ Ant Design 은 다섯 종류의 버튼을 제공합니다.
 
 ### 두 한자 사이의 공백을 없애는 방법?
 
-Ant Design 에선 버튼에 한자가 두 글자만 있는 경우, 두 한자 사이에 공백을 추가합니다 (Text 버튼과 Link 버튼은 예외). 공백을 없에고 싶다면 [ConfigProvider](/components/config-provider/#api) 을 이용해서 `autoInsertSpaceInButton` 를 `false` 로 설정하세요.
+Ant Design 에선 Button 내부에 한자가 두 글자만 있는 경우, 두 한자 사이에 공백을 추가합니다 (Text Button, Link Button 예외). 공백을 없에고 싶다면 [ConfigProvider](/components/config-provider/#api) 을 이용해서 `autoInsertSpaceInButton` 를 `false` 로 설정하세요.
 
 ```tsx
 <ConfigProvider autoInsertSpaceInButton={false}>
