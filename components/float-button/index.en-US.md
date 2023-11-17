@@ -11,12 +11,12 @@ tag: New
 
 FloatButton 은 `5.0.0` 버전부터 제공된 요소입니다.
 
-## When To Use
+## 사용할 시기
 
 - 사이트 전역에서 사용 가능한 기능.
 - 스크롤 위치와 상관없이 버튼이 보여야할 때.
 
-## Examples
+## 사용 예시
 
 <!-- prettier-ignore -->
 <code src="./demo/basic.tsx" iframe="360">기본</code>
@@ -70,6 +70,6 @@ FloatButton 은 `5.0.0` 버전부터 제공된 요소입니다.
 | visibilityHeight | BackTop 버튼이 표시되기 시작하는 최소 높이 | number | 400 |  |
 | onClick | 버튼을 클릭했을 때 실행되는 콜백함수를 등록합니다 | () => void | - |  |
 
-## Design Token
+## 테마 변수 (Design Token)
 
 <ComponentTokenTable component="FloatButton"></ComponentTokenTable>

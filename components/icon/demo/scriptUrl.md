@@ -4,4 +4,4 @@
 
 ## en-US
 
-You can use `scriptUrl` as an array after `@ant-design/icons@4.1.0`, manage icons in one `<Icon />` from multiple [iconfont.cn](http://iconfont.cn/) resources. If icon with a duplicate name in resources, it will overridden in array order.
+`@ant-design/icons@4.1.0` 버전 이후부터 `scriptUrl` 으로 여러개의 자원을 한번에 import 할 수 있게 됐습니다. 이를 통해 하나의 `<Icon />` 에서 여러 [iconfont.cn](http://iconfont.cn/) 리소스를 관리할 수 있습니다. 리소스에 이름이 같은 Icon 이 있다면 배열 순서대로 Icon 이 override 됩니다.

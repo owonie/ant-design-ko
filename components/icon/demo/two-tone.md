@@ -4,4 +4,4 @@
 
 ## en-US
 
-You can set `twoToneColor` prop to specific primary color for two-tone icons.
+`twoToneColor` 속성으로 투톤 Icon 의 색상을 지정해보세요.

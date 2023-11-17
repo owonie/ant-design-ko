@@ -4,4 +4,4 @@
 
 ## en-US
 
-Create a reusable React component by using `<Icon component={...} />`. The property `component` takes a React component that renders to `svg` element.
+재사용 가능한 컴포넌트를 만들어보세요: `<Icon component={...} />`. `component` 속성을 통해 원하는 Icon 컴포넌트를 렌더하세요.

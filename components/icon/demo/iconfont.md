@@ -4,4 +4,4 @@
 
 ## en-US
 
-If you are using [iconfont.cn](http://iconfont.cn/), you can use the icons in your project gracefully.
+[iconfont.cn](http://iconfont.cn/)을 사용하고 있다면 `createFromIconfontCN` 메서드를 이용해 `scriptUrl` 필드를 설정함으로써 쉽게 Icon 을 다룰 수 있습니다.
