@@ -6,82 +6,82 @@ cover: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*MLt3R6m9huoAAAAAAA
 coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*LT2jR41Uj2EAAAAAAAAAAAAADrJ8AQ/original
 ---
 
-Basic text writing, including headings, body text, lists, and more.
+텍스트의 기본 형식
 
-## When To Use
+## 사용할 시기
 
-- When need to display a title or paragraph contents in Articles/Blogs/Notes.
-- When you need copyable/editable/ellipsis texts.
+- 글 / 블로그 / 노트에서 제목 또는 단락 내용을 표시해야할 때.
+- 복사 / 편집 / 말줄임 등 기능이 있는 텍스트가 필요한 경우.
 
-## Examples
+## 사용 예시
 
 <!-- prettier-ignore -->
-<code src="./demo/basic.tsx">Basic</code>
-<code src="./demo/title.tsx">Title Component</code>
-<code src="./demo/paragraph-debug.tsx" debug>Title and Paragraph</code>
-<code src="./demo/text.tsx">Text and Link Component</code>
-<code src="./demo/interactive.tsx">Interactive</code>
-<code src="./demo/ellipsis.tsx">Ellipsis</code>
-<code src="./demo/ellipsis-middle.tsx">Ellipsis from middle</code>
+<code src="./demo/basic.tsx">기본</code>
+<code src="./demo/title.tsx">Title 컴포넌트</code>
+<code src="./demo/paragraph-debug.tsx" debug>Title 그리고 Paragraph</code>
+<code src="./demo/text.tsx">Text 그리고 Link 컴포넌트</code>
+<code src="./demo/interactive.tsx">상호적인 기능</code>
+<code src="./demo/ellipsis.tsx">말줄임 (Ellipsis)</code>
+<code src="./demo/ellipsis-middle.tsx">텍스트 중간 말줄임 (Ellipsis)</code>
 <code src="./demo/ellipsis-debug.tsx" debug>Ellipsis Debug</code>
-<code src="./demo/suffix.tsx">suffix</code>
-<code src="./demo/componentToken-debug.tsx" debug>Component Token</code>
+<code src="./demo/suffix.tsx">텍스트 접미사 말줄임 (suffix)</code>
+<code src="./demo/componentToken-debug.tsx" debug>컴포넌트 토큰</code>
 
 ## API
 
-Common props ref：[Common props](/docs/react/common-props)
+일반적인 속성 참조：[일반적인 속성](/docs/react/common-props)
 
 ### Typography.Text
 
-| Property | Description | Type | Default | Version |
+| 속성 | 설명 | 타입 | 기본값 | 버전 |
 | --- | --- | --- | --- | --- |
-| code | Code style | boolean | false |  |
-| copyable | Whether to be copyable, customize it via setting an object | boolean \| [copyable](#copyable) | false | [copyable](#copyable) |
-| delete | Deleted line style | boolean | false |  |
-| disabled | Disabled content | boolean | false |  |
-| editable | If editable. Can control edit state when is object | boolean \| [editable](#editable) | false | [editable](#editable) |
-| ellipsis | Display ellipsis when text overflows, can't configure expandable、rows and onExpand by using object. Diff with Typography.Paragraph, Text do not have 100% width style which means it will fix width on the first ellipsis. If you want to have responsive ellipsis, please set width manually | boolean \| [Omit<ellipsis, 'expandable' \| 'rows' \| 'onExpand'>](#ellipsis) | false | [ellipsis](#ellipsis) |
-| keyboard | Keyboard style | boolean | false | 4.3.0 |
-| mark | Marked style | boolean | false |  |
-| onClick | Set the handler to handle click event | (event) => void | - |  |
-| strong | Bold style | boolean | false |  |
-| italic | Italic style | boolean | false | 4.16.0 |
-| type | Content type | `secondary` \| `success` \| `warning` \| `danger` | - | success: 4.6.0 |
-| underline | Underlined style | boolean | false |  |
+| code | 코드 스타일 설정 | boolean | false |  |
+| copyable | 텍스트의 복사 가능 여부를 설정할 수 있으며 대상이 객체일 경우 다양한 속성을 정의할 수 있습니다 | boolean \| [copyable](#copyable) | false | [copyable](#copyable) |
+| delete | 취소선 스타일 설정 | boolean | false |  |
+| disabled | 사용불가 스타일 설정 | boolean | false |  |
+| editable | 텍스트의 편집 가능 여부를 설정할 수 있으며 대상이 객체일 경우 편집 상태를 제어할 수 있습니다 | boolean \| [editable](#editable) | false | [editable](#editable) |
+| ellipsis | 텍스트가 너무 길어지면 말줄임 처리를 합니다. 객체를 이용하여 행 개수 또는 확장 가능 여부 등을 설정할 수 없습니다. Typography.Paragraph와 달리 Text는 100% width 를 할 수 없으므로 첫 번째 말줄임표의 width 는 고정적입니다. 반응형 말줄임표를 사용하고 싶다면 width 를 수동으로 설정하세요 | boolean \| [Omit<ellipsis, 'expandable' \| 'rows' \| 'onExpand'>](#ellipsis) | false | [ellipsis](#ellipsis) |
+| keyboard | 키보드 스타일 | boolean | false | 4.3.0 |
+| mark | 마킹 스타일 설정 | boolean | false |  |
+| onClick | 버튼을 클릭했을 때 실행되는 콜백함수를 등록합니다 | (event) => void | - |  |
+| strong | 강조된 텍스트 스타일 설정 | boolean | false |  |
+| italic | 이탤릭체 스타일 설정 | boolean | false | 4.16.0 |
+| type | 컨텐츠 타입 설정 | `secondary` \| `success` \| `warning` \| `danger` | - | success: 4.6.0 |
+| underline | 텍스트 밑줄 설정 | boolean | false |  |
 
 ### Typography.Title
 
-| Property | Description | Type | Default | Version |
+| 속성 | 설명 | 타입 | 기본값 | 버전 |
 | --- | --- | --- | --- | --- |
-| code | Code style | boolean | false |  |
-| copyable | Whether to be copyable, customize it via setting an object | boolean \| [copyable](#copyable) | false | [copyable](#copyable) |
-| delete | Deleted line style | boolean | false |  |
-| disabled | Disabled content | boolean | false |  |
-| editable | If editable. Can control edit state when is object | boolean \| [editable](#editable) | false | [editable](#editable) |
-| ellipsis | Display ellipsis when text overflows, can configure rows and expandable by using object | boolean \| [ellipsis](#ellipsis) | false | [ellipsis](#ellipsis) |
-| level | Set content importance. Match with `h1`, `h2`, `h3`, `h4`, `h5` | number: 1, 2, 3, 4, 5 | 1 | 5: 4.6.0 |
-| mark | Marked style | boolean | false |  |
-| onClick | Set the handler to handle click event | (event) => void | - |  |
-| italic | Italic style | boolean | false | 4.16.0 |
-| type | Content type | `secondary` \| `success` \| `warning` \| `danger` | - | success: 4.6.0 |
-| underline | Underlined style | boolean | false |  |
+| code | 코드 스타일 설정 | boolean | false |  |
+| copyable | 텍스트의 복사 가능 여부를 설정할 수 있으며 대상이 객체일 경우 다양한 속성을 정의할 수 있습니다 | boolean \| [copyable](#copyable) | false | [copyable](#copyable) |
+| delete | 취소선 스타일 설정 | boolean | false |  |
+| disabled | 사용불가 스타일 설정 | boolean | false |  |
+| editable | 텍스트의 편집 가능 여부를 설정할 수 있으며 대상이 객체일 경우 편집 상태를 제어할 수 있습니다 | boolean \| [editable](#editable) | false | [editable](#editable) |
+| ellipsis | 텍스트가 너무 길어지면 말줄임 처리를 합니다. 객체를 이용하여 행 개수 또는 확장 가능 여부를 설정할 수 있습니다 | boolean \| [ellipsis](#ellipsis) | false | [ellipsis](#ellipsis) |
+| level | 텍스트 컨텐츠의 중요도를 표시할 수 있습니다. 표현수준은 `h1`, `h2`, `h3`, `h4`, `h5` 와 같습니다 | number: 1, 2, 3, 4, 5 | 1 | 5: 4.6.0 |
+| mark | 마킹 스타일 설정 | boolean | false |  |
+| onClick | 버튼을 클릭했을 때 실행되는 콜백함수를 등록합니다 | (event) => void | - |  |
+| italic | 이탤릭체 스타일 설정 | boolean | false | 4.16.0 |
+| type | 컨텐츠 타입 설정 | `secondary` \| `success` \| `warning` \| `danger` | - | success: 4.6.0 |
+| underline | 텍스트 밑줄 설정 | boolean | false |  |
 
 ### Typography.Paragraph
 
-| Property | Description | Type | Default | Version |
+| 속성 | 설명 | 타입 | 기본값 | 버전 |
 | --- | --- | --- | --- | --- |
-| code | Code style | boolean | false |  |
-| copyable | Whether to be copyable, customize it via setting an object | boolean \| [copyable](#copyable) | false | [copyable](#copyable) |
-| delete | Deleted line style | boolean | false |  |
-| disabled | Disabled content | boolean | false |  |
-| editable | If editable. Can control edit state when is object | boolean \| [editable](#editable) | false | [editable](#editable) |
-| ellipsis | Display ellipsis when text overflows, can configure rows and expandable by using object | boolean \| [ellipsis](#ellipsis) | false | [ellipsis](#ellipsis) |
-| mark | Marked style | boolean | false |  |
-| onClick | Set the handler to handle click event | (event) => void | - |  |
-| strong | Bold style | boolean | false |  |
-| italic | Italic style | boolean | false | 4.16.0 |
-| type | Content type | `secondary` \| `success` \| `warning` \| `danger` | - | success: 4.6.0 |
-| underline | Underlined style | boolean | false |  |
+| code | 코드 스타일 설정 | boolean | false |  |
+| copyable | 텍스트의 복사 가능 여부를 설정할 수 있으며 대상이 객체일 경우 다양한 속성을 정의할 수 있습니다 | boolean \| [copyable](#copyable) | false | [copyable](#copyable) |
+| delete | 취소선 스타일 설정 | boolean | false |  |
+| disabled | 사용불가 스타일 설정 | boolean | false |  |
+| editable | 텍스트의 편집 가능 여부를 설정할 수 있으며 대상이 객체일 경우 편집 상태를 제어할 수 있습니다 | boolean \| [editable](#editable) | false | [editable](#editable) |
+| ellipsis | 텍스트가 너무 길어지면 말줄임 처리를 합니다. 객체를 이용하여 행 개수 또는 확장 가능 여부를 설정할 수 있습니다 | boolean \| [ellipsis](#ellipsis) | false | [ellipsis](#ellipsis) |
+| mark | 마킹 스타일 설정 | boolean | false |  |
+| onClick | 버튼을 클릭했을 때 실행되는 콜백함수를 등록합니다 | (event) => void | - |  |
+| strong | 강조된 텍스트 스타일 설정 | boolean | false |  |
+| italic | 이탤릭체 스타일 설정 | boolean | false | 4.16.0 |
+| type | 컨텐츠 타입 | `secondary` \| `success` \| `warning` \| `danger` | - | success: 4.6.0 |
+| underline | 텍스트 밑줄 설정 | boolean | false |  |
 
 ### copyable
 
@@ -93,13 +93,13 @@ Common props ref：[Common props](/docs/react/common-props)
       format: 'text/plain' | 'text/html',
     }
 
-| Property | Description | Type | Default | Version |
+| 속성 | 설명 | 타입 | 기본값 | 버전 |
 | --- | --- | --- | --- | --- |
-| format | The Mime Type of the text | 'text/plain' \| 'text/html' | - | 4.21.0 |
-| icon | Custom copy icon: \[copyIcon, copiedIcon] | \[ReactNode, ReactNode] | - | 4.6.0 |
-| text | The text to copy | string | - |  |
-| tooltips | Custom tooltip text, hide when it is false | \[ReactNode, ReactNode] | \[`Copy`, `Copied`] | 4.4.0 |
-| onCopy | Called when copied text | function | - |  |
+| format | 텍스트의 Mime 타입 | 'text/plain' \| 'text/html' | - | 4.21.0 |
+| icon | 커스텀 복제 버튼 아이콘: \[copyIcon, copiedIcon] | \[ReactNode, ReactNode] | - | 4.6.0 |
+| text | 복사 된 텍스트 내용 | string | - |  |
+| tooltips | 값이 false 일시, 텍스트를 숨기는 커스텀 툴팁을 등록합니다 | \[ReactNode, ReactNode] | \[`Copy`, `Copied`] | 4.4.0 |
+| onCopy | 텍스트가 복사될 때 실행되는 콜백함수를 등록합니다 | function | - |  |
 
 ### editable
 
@@ -118,20 +118,20 @@ Common props ref：[Common props](/docs/react/common-props)
       enterIcon: ReactNode,
     }
 
-| Property | Description | Type | Default | Version |
+| 속성 | 설명 | 타입 | 기본값 | 버전 |
 | --- | --- | --- | --- | --- |
-| autoSize | `autoSize` attribute of textarea | boolean \| { minRows: number, maxRows: number } | - | 4.4.0 |
-| editing | Whether to be editable | boolean | false |  |
-| icon | Custom editable icon | ReactNode | &lt;EditOutlined /> | 4.6.0 |
-| maxLength | `maxLength` attribute of textarea | number | - | 4.4.0 |
-| tooltip | Custom tooltip text, hide when it is false | boolean \| ReactNode | `Edit` | 4.6.0 |
-| text | Edit text, specify the editing content instead of using the children implicitly | string | - | 4.24.0 |
-| onChange | Called when input at textarea | function(value: string) | - |  |
-| onCancel | Called when type ESC to exit editable state | function | - |  |
-| onStart | Called when enter editable state | function | - |  |
-| onEnd | Called when type ENTER to exit editable state | function | - | 4.14.0 |
-| triggerType | Edit mode trigger - icon, text or both (not specifying icon as trigger hides it) | Array&lt;`icon`\|`text`> | \[`icon`] |  |
-| enterIcon | Custom "enter" icon in the edit field (passing `null` removes the icon) | ReactNode | `<EnterOutlined />` | 4.17.0 |
+| autoSize | 텍스트 영역을 `autoSize` 처리합니다 | boolean \| { minRows: number, maxRows: number } | - | 4.4.0 |
+| editing | 편집 가능 여부 | boolean | false |  |
+| icon | 커스텀 편집 버튼 | ReactNode | &lt;EditOutlined /> | 4.6.0 |
+| maxLength | 텍스트 영역의 `maxLength` 속성 | number | - | 4.4.0 |
+| tooltip | 텍스트를 줄임 처리할 시 표시되는 툴팁 | boolean \| ReactNode | `Edit` | 4.6.0 |
+| text | 명시적으로 편집 텍스트를 지정해줍니다. 빈값일 시 암시적으로 children 을 사용합니다 | string | - | 4.24.0 |
+| onChange | 텍스트 영역에서 입력을 할 때 실행되는 콜백함수를 등록합니다 | function(value: string) | - |  |
+| onCancel | ESC 를 눌러 편집상태를 종료했을 때 실행되는 콜백함수를 등록합니다 | function | - |  |
+| onStart | 편집상태에 진입했을 때 실행되는 콜백함수를 등록합니다 | function | - |  |
+| onEnd | Enter 를 눌러 편집상태를 종료했을 때 실행되는 콜백함수를 등록합니다 | function | - | 4.14.0 |
+| triggerType | 편집 모드 트리거 - 아이콘, 텍스트 또는 둘 다 설정할 수 있습니다 (아이콘을 따로 트리거로 지정해주지 않으면 숨김처리 됩니다) | Array&lt;`icon`\|`text`> | \[`icon`] |  |
+| enterIcon | 편집 필드에서 Enter 아이콘을 커스터마이징 할 수 있습니다 (`null` 을 전달 시 아이콘 제거) | ReactNode | `<EnterOutlined />` | 4.17.0 |
 
 ### ellipsis
 
@@ -145,28 +145,28 @@ Common props ref：[Common props](/docs/react/common-props)
       onEllipsis: function(ellipsis),
     }
 
-| Property | Description | Type | Default | Version |
+| 속성 | 설명 | 타입 | 기본값 | 버전 |
 | --- | --- | --- | --- | --- |
-| expandable | Whether to be expandable | boolean | - |  |
-| rows | Max rows of content | number | - |  |
-| suffix | Suffix of ellipsis content | string | - |  |
-| symbol | Custom description of ellipsis | ReactNode | `Expand` |  |
-| tooltip | Show tooltip when ellipsis | boolean \| ReactNode \| [TooltipProps](/components/tooltip/#api) | - | 4.11.0 |
-| onEllipsis | Called when enter or leave ellipsis state | function(ellipsis) | - | 4.2.0 |
-| onExpand | Called when expand content | function(event) | - |  |
+| expandable | 확장 (전개) 가능 여부 | boolean | - |  |
+| rows | 텍스트 내용의 최대 행 수 | number | - |  |
+| suffix | 줄임표의 접미사 (Suffix of ellipsis content) | string | - |  |
+| symbol | 텍스트 줄임 시 표시되는 설명 | ReactNode | `Expand` |  |
+| tooltip | 텍스트를 줄임 처리할 시 표시되는 툴팁 | boolean \| ReactNode \| [TooltipProps](/components/tooltip/#api) | - | 4.11.0 |
+| onEllipsis | 텍스트를 줄였을 때 실행되는 콜백함수를 등록합니다 | function(ellipsis) | - | 4.2.0 |
+| onExpand | 텍스트를 펼쳤을 때 실행되는 콜백함수를 등록합니다 | function(event) | - |  |
 
-## Design Token
+## 테마 변수 (Design Token)
 
 <ComponentTokenTable component="Typography"></ComponentTokenTable>
 
 ## FAQ
 
-### How to use Typography.Link in react-router?
+### react-router 에서 Typography.Link 사용하는 방법?
 
-`react-router` support [customize](https://github.com/ReactTraining/react-router/blob/master/packages/react-router-dom/docs/api/Link.md#component-reactcomponent) render component:
+`react-router` 는 [커스터마이즈](https://github.com/ReactTraining/react-router/blob/master/packages/react-router-dom/docs/api/Link.md#component-reactcomponent) 렌더 컴포넌트를 지원합니다:
 
 ```tsx
 <Link to="/" component={Typography.Link} />
 ```
 
-**Note：** This is not equivalent to the execution logic of react-router's Link [reference](https://github.com/ant-design/ant-design/pull/26737/files#r488769888)
+**Note：** react-router's Link 실행 로직과 다릅니다. [참고문서](https://github.com/ant-design/ant-design/pull/26737/files#r488769888)

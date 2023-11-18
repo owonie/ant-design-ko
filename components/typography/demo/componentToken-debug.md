@@ -4,4 +4,4 @@
 
 ## en-US
 
-Custom component token.
+커스텀 컴포넌트 Token.

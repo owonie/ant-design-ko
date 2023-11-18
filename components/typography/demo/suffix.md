@@ -4,4 +4,4 @@
 
 ## en-US
 
-add suffix ellipsis support.
+텍스트 접미사 줄임 기능을 지원합니다.
