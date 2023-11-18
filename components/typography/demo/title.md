@@ -4,4 +4,4 @@
 
 ## en-US
 
-Display title in different level.
+단계별로 Title 을 사용할 수 있게 됩니다.

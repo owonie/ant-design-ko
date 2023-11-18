@@ -4,4 +4,4 @@
 
 ## en-US
 
-Provide additional interactive capacity of editable and copyable.
+편집 / 복사 등 상호 작용이 가능한 기능을 제공합니다.

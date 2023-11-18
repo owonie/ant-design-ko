@@ -4,4 +4,4 @@
 
 ## en-US
 
-Display the title and paragraph.
+제목과 단락을 표시할 수 있습니다.

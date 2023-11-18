@@ -4,4 +4,4 @@
 
 ## en-US
 
-Provides multiple types of text and link.
+텍스트와 링크의 여러가지 스타일을 제공합니다.

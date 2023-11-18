@@ -4,4 +4,4 @@
 
 ## en-US
 
-You can ellipsis content from middle by customize `ellipsis={{ suffix: ... }}`.
+ellipsis 을 customize 하여 텍스트를 중간부터 말줄임 처리를 할 수 있습니다. `ellipsis={{ suffix: ... }}`.

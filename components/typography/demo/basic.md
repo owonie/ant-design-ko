@@ -4,4 +4,4 @@
 
 ## en-US
 
-Display the document sample.
+문서 샘플을 보여줍니다.
