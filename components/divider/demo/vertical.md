@@ -4,4 +4,4 @@
 
 ## en-US
 
-Use `type="vertical"` make it vertical.
+`type="vertical"` 을 사용하면 Divider를 수직으로 만들 수 있습니다.

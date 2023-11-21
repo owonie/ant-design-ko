@@ -10,38 +10,38 @@ group:
   order: 2
 ---
 
-A divider line separates different content.
+Divider (구분선)는 서로 다른 컨텐츠를 나누는 역할을 합니다.
 
-## When To Use
+## 사용할 시기
 
-- Divide sections of article.
-- Divide inline text and links such as the operation column of table.
+- 서로 다른 문장의 섹션을 구분할 때
+- 테이블의
 
-## Examples
+## 사용 예시
 
 <!-- prettier-ignore -->
-<code src="./demo/horizontal.tsx">Horizontal</code>
-<code src="./demo/with-text.tsx">Divider with title</code>
-<code src="./demo/plain.tsx">Text without heading style</code>
-<code src="./demo/vertical.tsx">Vertical</code>
+<code src="./demo/horizontal.tsx">수평선 (Horizontal)</code>
+<code src="./demo/with-text.tsx">Divider 그리고 title</code>
+<code src="./demo/plain.tsx">heading style 이 없는 Text</code>
+<code src="./demo/vertical.tsx">수직선 (Vertical)</code>
 <code src="./demo/customize-style.tsx" debug>Style Customization</code>
 <code src="./demo/component-token.tsx" debug>Component Token</code>
 
 ## API
 
-Common props ref：[Common props](/docs/react/common-props)
+일반적인 속성 참조：[일반적인 속성](/docs/react/common-props)
 
-| Property | Description | Type | Default | Version |
+| 속성 | 설명 | 타입 | 기본값 | 버전 |
 | --- | --- | --- | --- | --- |
-| children | The wrapped title | ReactNode | - |  |
-| className | The className of container | string | - |  |
-| dashed | Whether line is dashed | boolean | false |  |
-| orientation | The position of title inside divider | `left` \| `right` \| `center` | `center` |  |
-| orientationMargin | The margin-left/right between the title and its closest border, while the `orientation` must be `left` or `right`, If a numeric value of type `string` is provided without a unit, it is assumed to be in pixels (px) by default. | string \| number | - |  |
-| plain | Divider text show as plain style | boolean | true | 4.2.0 |
-| style | The style object of container | CSSProperties | - |  |
-| type | The direction type of divider | `horizontal` \| `vertical` | `horizontal` |  |
+| children | Divider 에 감싸진 대상 (제목) | ReactNode | - |  |
+| className | Container 의 클래스명 | string | - |  |
+| dashed | Divider 선의 점선 여부 | boolean | false |  |
+| orientation | Divider 내부 텍스트의 위치 | `left` \| `right` \| `center` | `center` |  |
+| orientationMargin | 제목과 가장 가까운 테두리 사이의 여백. `orientation` 은 `left` 또는 `right` 로 설정해주세요. 단위 없이 `string` 으로 숫자 값이 전달되면 픽셀(px) 값으로 인식합니다 | string \| number | - |  |
+| plain | Divider 텍스트를 일반 스타일로 표시합니다 | boolean | true | 4.2.0 |
+| style | Container 의 스타일 객체 | CSSProperties | - |  |
+| type | Divider 의 방항 (수직/수평) | `horizontal` \| `vertical` | `horizontal` |  |
 
-## Design Token
+## 테마 변수 (Design Token)
 
 <ComponentTokenTable component="Divider"></ComponentTokenTable>
