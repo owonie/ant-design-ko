@@ -4,4 +4,4 @@
 
 ## en-US
 
-Use `style` to change default style.
+`style` 으로 기본 스타일을 변경해보세요.

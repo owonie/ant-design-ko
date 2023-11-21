@@ -4,4 +4,4 @@
 
 ## en-US
 
-You can use non-heading style of divider text by setting `plain`.
+`plain` 을 설정하면 간이 버전의 Divider 텍스트 스타일을 사용할 수 있습니다.

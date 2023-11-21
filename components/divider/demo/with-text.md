@@ -4,4 +4,4 @@
 
 ## en-US
 
-Divider with inner title, set `orientation="left/right"` to align it.
+내부 제목이 있는 Divider, `orientation` 설을을 통해 제목 위치를 정할 수 있습니다.
