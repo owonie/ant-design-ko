@@ -4,4 +4,4 @@
 
 ## en-US
 
-Auto wrap line.
+자동 줄바꿈.

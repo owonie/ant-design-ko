@@ -4,4 +4,4 @@
 
 ## en-US
 
-Set the `gap` between elements, which has three preset sizes: `small`, `middle`, `large`, You can also customize the gap size.
+`gap` 을 사용해 요소 사이의 간격을 설정합니다. `small`, `middle`, `large` 와같은 세 가지 미리 정의된 크기 속성이 있습니다. 물론 사용자가 직접 간격 크기를 설정할 수 도 있습니다.

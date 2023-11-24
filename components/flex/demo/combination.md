@@ -4,4 +4,4 @@
 
 ## en-US
 
-Nesting can achieve more complex layouts.
+중첩 사용을 통해 더 복잡한 레이아웃을 구현할 수 있습니다.

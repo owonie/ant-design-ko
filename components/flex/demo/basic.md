@@ -4,4 +4,4 @@
 
 ## en-US
 
-The basic usage.
+기본 사용 방법입니다.
