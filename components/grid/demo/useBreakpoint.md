@@ -4,4 +4,4 @@
 
 ## en-US
 
-Use `useBreakpoint` Hook provide personalized layout.
+`useBreakpoint` Hook 을 사용하면 커스텀 레이아웃을 사용할 수 있습니다.

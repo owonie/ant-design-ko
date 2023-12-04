@@ -6,4 +6,4 @@
 
 ## en-US
 
-`span` `pull` `push` `offset` `order` property can be embedded into `xs` `sm` `md` `lg` `xl` `xxl` properties to use, where `xs={6}` is equivalent to `xs={{span: 6}}`.
+`span` `pull` `push` `offset` `order` 속성은 `xs` `sm` `md` `lg` `xl` `xxl` 속성에 종속될 수 있습니다. 예를 들어 `xs={6}` 은 `xs={{span: 6}}` 와 같습니다.

@@ -4,7 +4,7 @@
 
 ## en-US
 
-To change the element sort by `order`.
+요소의 순서를 `order` 으로 바꿀 수 있습니다.
 
 ```css
 #components-grid-demo-flex-order [class~='ant-row'] {

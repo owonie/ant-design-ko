@@ -6,7 +6,7 @@
 
 ## en-US
 
-Child elements depending on the value of the `start`, `center`, `end`, `space-between`, `space-around` and `space-evenly`, which are defined in its parent node typesetting mode.
+`start`, `center`, `end`, `space-between`, `space-around`, `space-evenly` 와 같은 값들을 통해 자식 요소가 부모 노드 속에서 배치되는 방식을 결정할 수 있습니다.
 
 ```css
 #components-grid-demo-flex [class~='ant-row'] {

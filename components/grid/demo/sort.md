@@ -6,4 +6,4 @@
 
 ## en-US
 
-By using `push` and `pull` class you can easily change column order.
+`push` 와 `pull` 클래스를 사용하여 열의 순서를 쉽게 변경할 수 있습니다.
