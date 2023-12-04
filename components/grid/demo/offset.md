@@ -6,4 +6,4 @@
 
 ## en-US
 
-`offset` can set the column to the right side. For example, using `offset = {4}` can set the element shifted to the right four columns width.
+`offset` 을 사용하면 column 을 오른쪽으로 옮길 수 있습니다. 예를 들어 `offset = {4}` 은 특정 요소를 오른쪽으로 네 개의 column 너비 만큼 이동시킵니다.

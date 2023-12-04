@@ -10,13 +10,13 @@
 
 ## en-US
 
-You can use the `gutter` property of `Row` as grid spacing, we recommend set it to `(16 + 8n) px` (`n` stands for natural number).
+`Row` 의 속성인 `gutter` 을 이용해 그리드의 간격 설정을 할 수 있습니다. 간격 설정은 `(16 + 8n) px` 공식을 참조하는 것을 추천드립니다 (`n` 은 자연수입니다).
 
-You can set it to a object like `{ xs: 8, sm: 16, md: 24, lg: 32 }` for responsive design.
+반응형 디자인을 원한다면 다음과 같이 작성 할 수 있습니다: `{ xs: 8, sm: 16, md: 24, lg: 32 }`.
 
-You can use an array to set vertical spacing, `[horizontal, vertical]` `[16, { xs: 8, sm: 16, md: 24, lg: 32 }]`.
+`[수평, 수직]` 형식과 같이 배열을 사용하여 수직 간격을 설정할 수 있습니다. 예를 들어 다음과 같습니다: `[16, { xs: 8, sm: 16, md: 24, lg: 32 }]`.
 
-> vertical gutter was supported after `3.24.0`.
+> 배열 형식의 수직 간격은 `3.24.0` 버전 이후부터 지원됩니다.
 
 ```css
 .gutter-box {

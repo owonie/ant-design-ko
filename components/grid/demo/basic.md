@@ -6,6 +6,6 @@
 
 ## en-US
 
-From the stack to the horizontal arrangement.
+스택에서 수평 배열로 변경.
 
-You can create a basic grid system by using a single set of `Row` and `Col` grid assembly, all of the columns (Col) must be placed in `Row`.
+단일 `Row` 및 `Col` 그리드 구성을 사용하여 기본적인 그리드 시스템을 만들 수 있습니다.모든 열은 반드시 `Row` 내부에 위치해야 합니다.

@@ -4,7 +4,7 @@
 
 ## en-US
 
-Child elements vertically aligned.
+자식 요소를 수직 정렬합니다.
 
 ```css
 #components-grid-demo-flex-align [class~='ant-row'] {

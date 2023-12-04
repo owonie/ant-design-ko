@@ -4,4 +4,4 @@
 
 ## en-US
 
-Referring to the Bootstrap [responsive design](http://getbootstrap.com/css/#grid-media-queries), here preset six dimensions: `xs` `sm` `md` `lg` `xl` `xxl`.
+부트스트랩의 [반응형 디자인](http://getbootstrap.com/css/#grid-media-queries) 을 참조하여, 여섯 가지의 반응형 사이즈를 사용할 수 있습니다: `xs` `sm` `md` `lg` `xl` `xxl`.

@@ -4,7 +4,7 @@
 
 ## en-US
 
-A simple playground for column count and gutter.
+여러 등분의 그리드와 간격을 간단히 구성할 수 있습니다.
 
 ```css
 #components-grid-demo-playground [class~='ant-col'] {
